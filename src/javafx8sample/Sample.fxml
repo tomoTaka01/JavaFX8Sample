@@ -10,7 +10,7 @@
 <fx:root xmlns:fx="http://javafx.com/fxml/1" type="javafx.scene.layout.VBox"
          stylesheets="@../../css/layout.css" styleClass="vbox"> 
     <children>
-        <Label text="%locale_label" fx:id="localeLabel" />
+        <Label fx:id="localeLabel" />
         <Label text="%birthday_label" />
         <DatePicker fx:id="datePicker" />
         <Label fx:id="messageLabel" />
