@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml/1" type="javafx.scene.layout.VBox"
+         stylesheets="@../../css/layout.css" styleClass="vbox"> 
+    <children>
+        <Label text="%locale_label" fx:id="localeLabel" />
+        <Label text="%birthday_label" />
+        <DatePicker fx:id="datePicker" />
+        <Label fx:id="messageLabel" />
+        <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="222.0">
+            <children>
+                <Button text="%計算ラベル" fx:id="calculateButton" />
+            </children>
+        </HBox>
+    </children>
+</fx:root>
