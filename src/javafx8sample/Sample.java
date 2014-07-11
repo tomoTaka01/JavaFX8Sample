@@ -54,11 +54,9 @@ public class Sample extends VBox{
             LocalDate localDate = this.datePicker.getValue();
             if (localDate != null) {
                 LocalDate now = LocalDate.now();
-                int diff = now.compareTo(localDate);
                 int age = localDate.until(now).getYears();
                 String messageLabelText = javaBundle.getString("message");
-                String xxx = String.format(messageLabelText, age);
-                this.messageLabel.setText(xxx);
+                this.messageLabel.setText(String.format(messageLabelText, age));
             }
         });
     }

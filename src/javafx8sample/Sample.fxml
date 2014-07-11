@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root xmlns:fx="http://javafx.com/fxml/1" type="javafx.scene.layout.VBox"
-         stylesheets="@../../css/layout.css" styleClass="vbox"> 
+<fx:root styleClass="vbox" stylesheets="@../../css/layout.css" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"> 
     <children>
         <Label fx:id="localeLabel" />
         <Label text="%birthday_label" />
@@ -16,7 +15,7 @@
         <Label fx:id="messageLabel" />
         <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="222.0">
             <children>
-                <Button text="%計算ラベル" fx:id="calculateButton" />
+                <Button fx:id="calculateButton" text="%計算ラベル" />
             </children>
         </HBox>
     </children>
